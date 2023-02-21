@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Enrollment form</title>
+</head>
+
+<body>
+
+    <form action="#" method="post">
+
+        <table border="1">
+            <tr>
+                <th colspan="2">
+                    <h1>Enrollment form</h1>
+                </th>
+            </tr>
+
+            <tr>
+                <td>Name:</td>
+                <td><input type="text" name="name" required></td>
+            </tr>
+
+            <tr>
+                <td>Email:</td>
+                <td><input type="email" name="email" required></td>
+            </tr>
+
+            <tr>
+                <td>Password:</td>
+                <td><input type="password" name="password" required></td>
+            </tr>
+
+            <tr>
+                <td>Gender:</td>
+                <td><input type="radio" name="gender" value="male" required>Male
+                    <input type="radio" name="gender" value="female" required>Female
+                    <input type="radio" name="gender" value="others" required>Others
+                </td>
+            </tr>
+
+
+            <tr>
+                <td>Qualifications:</td>
+                <td>
+                    <input type="checkbox" name="qualifications" value="HSC" required>HSC
+                    <input type="checkbox" name="qualifications" value="Intermediate" >Intermediate
+                    <input type="checkbox" name="qualifications" value="B-Tech" >B-Tech
+                    <input type="checkbox" name="qualifications" value="M-Tech" >M-Tech
+                    <input type="checkbox" name="qualifications" value="Phd" >Phd
+                </td>
+            </tr>
+
+            <tr>
+                <td>Employed?:</td>
+                <td><select name="sal" id="sal">
+                    <option value=""></option>
+                    <option value="salaried">Salaried</option>
+                    <option value="non-salaried">Non-Salaried</option>
+                </select></td>
+            </tr>
+
+            <tr>
+                <td>Remarks</td>
+                <td><textarea name="remarks" id="remarks" cols="50" rows="5"></textarea></td>
+            </tr>
+
+            <tr>
+                <td> <button type="submit">Submit</button></td>
+                <td> <button type="reset">Reset</button></td>              </td>
+            </tr>
+        </table>
+    </form>
+
+
+
+</body>
+
+</html>
